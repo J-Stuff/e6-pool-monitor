@@ -7,3 +7,13 @@ Built on the latest Python 1.12.1
 
 ## Credits
 [Check out the open source libraries used in this project!](/CREDITS.md)
+
+
+## Installation
+### Docker
+`TBD`
+
+### Environment Variables
+| Variable | Description | Default |
+| --- | --- | --- |
+| `LOGGING_LEVEL` | Logging Level, can be 'debug' or 'info' | `info` |

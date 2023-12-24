@@ -5,8 +5,14 @@ description = ""
 authors = [
     {name = "J Stuff", email = "josh@j-stuff.net"},
 ]
-dependencies = []
+dependencies = [
+    "termcolor>=2.4.0",
+]
 requires-python = ">=3.12"
 readme = "README.md"
 license = {text = "gpl-3.0"}
 
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
