@@ -1,0 +1,4 @@
+Here is my list of notes to self for development.
+
+
+main.py is the application entry point
