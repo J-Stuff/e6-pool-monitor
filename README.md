@@ -16,4 +16,4 @@ Built on the latest Python 1.12.1
 ### Environment Variables
 | Variable | Description | Default |
 | --- | --- | --- |
-| `LOGGING_LEVEL` | Logging Level. can be `debug` or `info` | `info` |
+| `LOGGING_LEVEL` | Logging Level. Can be `debug` or `info` | `info` |
