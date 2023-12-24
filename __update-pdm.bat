@@ -1,4 +1,4 @@
-@REM This program quickly updates PDM to use the requirements.txt file. Not needed for running the bot, just a script to make developing it easier
+@REM This program quickly updates PDM to use the requirements.txt file. As well as updating PDM when new dep's are added. Not needed for running the bot, just a script to make developing it easier
 @echo off
 pdm import -f requirements requirements.txt
 pdm update
