@@ -17,3 +17,4 @@ Built on Python 3.11
 | Variable | Description | Default |
 | --- | --- | --- |
 | `LOGGING_LEVEL` | Logging Level. Can be `debug` or `info` | `info` |
+| `E621_USERNAME` | Username for e621.net. This must be set as it is required for generating a UserAgent string. Read more [here](https://e621.net/help/api)| `None` |
