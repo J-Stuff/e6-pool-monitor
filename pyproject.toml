@@ -15,6 +15,7 @@ dependencies = [
     "multidict==6.0.4",
     "termcolor==2.4.0",
     "yarl==1.9.4",
+    "python-dotenv>=1.0.0",
 ]
 requires-python = ">=3.11"
 readme = "README.md"
