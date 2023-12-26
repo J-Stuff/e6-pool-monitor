@@ -9,6 +9,8 @@ def init_logging():
         logLevel = os.getenv("LOGGING_LEVEL")
         if logLevel == 'debug':
             logLevel = logging.DEBUG
+        elif logLevel == 'DEBUG':
+            logLevel = logging.DEBUG
         elif logLevel == 'info':
             logLevel = logging.INFO
         else:
@@ -17,7 +19,10 @@ def init_logging():
         logLevel = logging.INFO
 
     class CustomFormatter(logging.Formatter):
-        FORMAT = '[%(asctime)s]  [%(funcName)s @ %(module)s] %(message)s'
+        if logLevel == logging.DEBUG:
+            FORMAT = '[%(asctime)s]  [%(funcName)s @ %(module)s] %(message)s'
+        else:
+            FORMAT = '[%(asctime)s] %(message)s'
         FORMATS = {
             logging.DEBUG: colored("[%(levelname)s]", "light_cyan", attrs=["bold"]) + colored(" - ", attrs=["bold"]) + colored(FORMAT, "white"),
             logging.INFO: colored("[%(levelname)s]", "cyan", attrs=["bold"]) + colored(" - ", attrs=["bold"]) + colored(FORMAT, "white"),
